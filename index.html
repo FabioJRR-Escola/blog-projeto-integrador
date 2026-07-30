@@ -127,5 +127,23 @@ Para Kant, Sair da menoridade exige que o intelectual atue como um provocador da
         Projeto Integrador - Atividades desenvolvidas pelos estudantes do 2° Ano do Ensino Médio.</p>
     </footer>
 
-</body>
-</html>
+    <script>
+        function mostrarAba(idAba, elemento) {
+            // Esconde todas as seções
+            const secoes = document.querySelectorAll('.aba-conteudo');
+            secoes.forEach(secao => secao.classList.remove('ativa'));
+
+            // Desmarca todos os botões do menu
+            const botoes = document.querySelectorAll('.tab-btn');
+            botoes.forEach(btn => btn.classList.remove('ativo'));
+
+            // Mostra apenas a seção clicada
+            const secaoAlvo = document.getElementById(idAba);
+            if (secaoAlvo) {
+                secaoAlvo.classList.add('ativa');
+            }
+
+            // Destaca o botão clicado
+            elemento.classList.add('ativo');
+        }
+    </script>
