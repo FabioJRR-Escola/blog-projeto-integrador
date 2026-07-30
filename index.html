@@ -19,14 +19,18 @@
         </div>
     </header>
 
+        <!-- NAVEGAÇÃO EM ABAS -->
     <nav>
-        <a href="#inicio">Início</a>
-        <a href="#projeto-mudanças-climáticas">Mudanças Climáticas</a>
-        <a href="#projeto-racismo">Racismo</a>
-        <a href="#projeto-desigualdade-social">Desigualdade Social</a>
-        <a href="#projeto-decolonialidade">Decolonialidade</a>
-        <a href="#projeto-feminicídio">Feminicídio</a>
+        <div class="nav-container">
+            <button class="tab-btn ativo" onclick="mostrarAba('inicio', this)">Início</button>
+            <button class="tab-btn" onclick="mostrarAba('mudancas-climaticas', this)">Mudanças Climáticas</button>
+            <button class="tab-btn" onclick="mostrarAba('racismo', this)">Racismo</button>
+            <button class="tab-btn" onclick="mostrarAba('desigualdade-social', this)">Desigualdade Social</button>
+            <button class="tab-btn" onclick="mostrarAba('decolonialidade', this)">Decolonialidade</button>
+            <button class="tab-btn" onclick="mostrarAba('feminicidio', this)">Feminicídio</button>
+        </div>
     </nav>
+
 
     <main>
         <!-- SESSÃO: INÍCIO -->
