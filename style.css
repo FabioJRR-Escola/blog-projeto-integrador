@@ -35,44 +35,54 @@ header {
     object-fit: contain;
 }
 
-/* Ajuste de responsividade para a tela do celular */
-@media (max-width: 600px) {
-    .header-container {
-        flex-direction: column; /* Coloca uma imagem embaixo da outra no celular */
-        gap: 15px;
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 640px) {
+    header {
+        padding: 0.85rem 0.5rem;
     }
-    
+
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .header-img-lateral {
-        max-height: 130px;
+        max-height: 85px;
     }
 
     .header-img-titulo {
-        max-height: 70px;
-        max-width: 90%;
+        max-height: 55px;
+        max-width: 95%;
     }
-}
 
-nav {
-    background-color: #34495e;
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+    .nav-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+        padding: 0.4rem;
+    }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.8rem 1.5rem;
-    margin: 0 0.5rem;
-    border-radius: 4px;
-    transition: background 0.3s;
-}
+    .nav-link {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.85rem;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
 
-nav a:hover {
-    background-color: #1abc9c;
+    main {
+        margin: 1rem auto;
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 1.25rem 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .citacoes-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
 
 /* Estrutura Principal */
