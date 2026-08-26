@@ -3,139 +3,830 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Blog - Projeto Integrador</title>
-    <!-- Ligação com o arquivo CSS separado -->
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-        <div class="header-container">
-            <!-- Imagem Vertical (Ícones) -->
-            <img src="1000121170.png" alt="Ícones das áreas de conhecimento" class="header-img-lateral">
-            
-            <!-- Imagem Horizontal (Título) -->
-            <img src="1000121166.png" alt="Projeto Integrador: Literatura e Sociedade" class="header-img-titulo">
+    <div class="header-container">
+
+        <img
+            src="1000121170.png"
+            alt="Ícones das áreas de conhecimento"
+            class="header-img-lateral"
+        >
+
+        <img
+            src="1000121166.png"
+            alt="Projeto Integrador: Literatura e Sociedade"
+            class="header-img-titulo"
+        >
+
+    </div>
+</header>
+
+
+<!-- ==========================================================
+     NAVEGAÇÃO
+========================================================== -->
+
+<nav>
+    <div class="nav-container">
+
+        <button class="tab-btn ativo"
+            onclick="mostrarAba('inicio', this)">
+            Início
+        </button>
+
+        <button class="tab-btn"
+            onclick="mostrarAba('mudancas-climaticas', this)">
+            Mudanças Climáticas
+        </button>
+
+        <button class="tab-btn"
+            onclick="mostrarAba('racismo', this)">
+            Racismo
+        </button>
+
+        <button class="tab-btn"
+            onclick="mostrarAba('desigualdade-social', this)">
+            Desigualdade Social
+        </button>
+
+        <button class="tab-btn"
+            onclick="mostrarAba('decolonialidade', this)">
+            Decolonialidade
+        </button>
+
+        <button class="tab-btn"
+            onclick="mostrarAba('feminicidio', this)">
+            Feminicídio
+        </button>
+
+    </div>
+</nav>
+
+
+<main>
+
+
+<!-- ==========================================================
+     INÍCIO
+========================================================== -->
+
+<section id="inicio" class="aba-conteudo ativa">
+
+    <h2>Intelectualidades</h2>
+
+    <p class="introducao">
+        Bem-vindo ao nosso blog escolar! Aqui compartilhamos nossos
+        projetos, ideias e aprendizados. Para iniciar nossa jornada,
+        deixamos algumas reflexões fundamentais que guiam nosso
+        pensamento crítico.
+    </p>
+
+
+    <div class="citacoes-grid">
+
+        <div class="card-citacao">
+
+            <img src="filosofia1.jpg" alt="Platão">
+
+            <blockquote>
+                "Não faremos injustiça aos filósofos que se tiverem
+                formado entre nós, mas dir-lhes-emos palavras justas,
+                ao forçá-los a tomar conta dos outros e a guardá-los."
+                <br><br>
+                Platão entendia que a função do intelectual era
+                indissociável da responsabilidade política, agindo
+                com ética e justiça.
+            </blockquote>
+
+            <span class="autor">- Platão</span>
+
         </div>
-    </header>
 
-        <!-- NAVEGAÇÃO EM ABAS -->
-    <nav>
-        <div class="nav-container">
-            <button class="tab-btn ativo" onclick="mostrarAba('inicio', this)">Início</button>
-            <button class="tab-btn" onclick="mostrarAba('mudancas-climaticas', this)">Mudanças Climáticas</button>
-            <button class="tab-btn" onclick="mostrarAba('racismo', this)">Racismo</button>
-            <button class="tab-btn" onclick="mostrarAba('desigualdade-social', this)">Desigualdade Social</button>
-            <button class="tab-btn" onclick="mostrarAba('decolonialidade', this)">Decolonialidade</button>
-            <button class="tab-btn" onclick="mostrarAba('feminicidio', this)">Feminicídio</button>
+
+        <div class="card-citacao">
+
+            <img src="filosofia2.jpg" alt="Karl Marx">
+
+            <blockquote>
+                "Os filósofos limitaram-se a interpretar o mundo
+                de diversas maneiras; o que importa é transformá-lo."
+            </blockquote>
+
+            <span class="autor">- Karl Marx</span>
+
         </div>
-    </nav>
 
-</div>
-           <main>
-        <!-- Apenas o Início começa com "ativa" -->
-        <section id="inicio" class="aba-conteudo ativa">
-<h2>Intelectualidades</h2>
-            <p>Bem-vindo ao nosso blog escolar! Aqui compartilhamos nossos projetos, ideias e aprendizados. Para iniciar nossa jornada, deixamos algumas reflexões fundamentais que guiam nosso pensamento crítico.</p>
-            
-            <div class="citacoes-grid">
-                
-                <!-- Card de Filosofia -->
-                <div class="card-citacao">
-                    <img src="filosofia1.jpg" alt="Retrato de Immanuel Kant">
-                    <blockquote>"Não faremos injustiça aos filósofos que se tiverem formado entre nós, mas dir-lhes-emos palavras justas, ao forçá-los a tomar conta dos outros e a guardá-los".
-Platão entendia que a função do intelectual era indissociável da responsabilidade política, agindo com ética e justiça.
-</blockquote>
-                    <span class="autor">- Platão</span>
+
+        <div class="card-citacao">
+
+            <img src="filosofia3.jpg" alt="Djamila Ribeiro">
+
+            <blockquote>
+                “Lugar de fala não é silenciamento, é localização.”
+                <br><br>
+                O intelectual engajado busca quebrar o silêncio
+                secular imposto a negros, indígenas e mulheres,
+                permitindo que eles sejam sujeitos da própria história.
+            </blockquote>
+
+            <span class="autor">- Djamila Ribeiro</span>
+
+        </div>
+
+
+        <div class="card-citacao">
+
+            <img src="filosofia4.jpg" alt="Michel Foucault">
+
+            <blockquote>
+                “Cada sociedade possui seu regime de verdade.”
+                <br><br>
+                Foucault entendia que o intelectual deveria analisar
+                como as instituições fabricam regimes de verdade
+                e moldam os sujeitos.
+            </blockquote>
+
+            <span class="autor">- Foucault</span>
+
+        </div>
+
+
+        <div class="card-citacao">
+
+            <img src="filosofia5.jpg" alt="Immanuel Kant">
+
+            <blockquote>
+                “Sapere aude! Tenha coragem de fazer uso do teu
+                próprio entendimento.”
+                <br><br>
+                Para Kant, sair da menoridade exige autonomia,
+                razão e pensamento crítico.
+            </blockquote>
+
+            <span class="autor">- Immanuel Kant</span>
+
+        </div>
+
+
+        <div class="card-citacao">
+
+            <img src="sociologia1.jpg" alt="Zygmunt Bauman">
+
+            <blockquote>
+                "Nenhuma sociedade que esquece a arte de questionar
+                pode esperar encontrar respostas para os problemas
+                que a afligem."
+            </blockquote>
+
+            <span class="autor">- Zygmunt Bauman</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     MUDANÇAS CLIMÁTICAS
+========================================================== -->
+
+<section id="mudancas-climaticas" class="aba-conteudo">
+
+    <h2>Mudanças Climáticas</h2>
+
+    <p class="introducao">
+        Nesta seção apresentamos os trabalhos desenvolvidos sobre
+        mudanças climáticas, seus impactos e os desafios enfrentados
+        pela sociedade.
+    </p>
+
+
+    <!-- TRABALHO 1 -->
+
+    <div class="demonstracao">
+
+        <div class="demonstracao-imagem">
+
+            <!-- SUBSTITUA PELO NOME DA IMAGEM -->
+            <img src="mudancas-climaticas1.jpg"
+                 alt="Demonstração do trabalho sobre mudanças climáticas">
+
+        </div>
+
+        <div class="demonstracao-texto">
+
+            <span class="materia-tag">
+                Demonstração
+            </span>
+
+            <h3>Trabalho sobre Mudanças Climáticas</h3>
+
+            <p>
+                Escreva aqui a descrição do trabalho realizado pelos
+                estudantes. Explique o tema abordado, os objetivos
+                da atividade, as pesquisas realizadas e as principais
+                conclusões encontradas.
+            </p>
+
+            <p>
+                Este espaço também pode ser utilizado para explicar
+                como o trabalho foi desenvolvido e qual foi a sua
+                importância para o Projeto Integrador.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ÁUDIO E VÍDEO -->
+
+    <div class="midias">
+
+        <div class="midias-titulo">
+
+            <span class="materia-tag">
+                Mídias
+            </span>
+
+            <h3>Vídeos e áudios</h3>
+
+            <p>
+                Confira os conteúdos produzidos pelos estudantes.
+            </p>
+
+        </div>
+
+
+        <div class="midias-grid">
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <!-- COLE A URL DO VÍDEO NO SRC -->
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+                        title="Vídeo do trabalho"
+                        allowfullscreen>
+                    </iframe>
+
                 </div>
 
-                 <div class="card-citacao">
-                    <img src="filosofia2.jpg" alt="Retrato de Immanuel Kant">
-                    <blockquote>"Os filósofos limitaram-se a interpretar o mundo de diversas maneiras; o que importa é transformá-lo"</blockquote>
-                    <span class="autor">- Karl Marx</span>
+                <h4>Vídeo do trabalho</h4>
+
+                <p>
+                    Apresentação ou registro da atividade realizada.
+                </p>
+
+            </div>
+
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <!-- COLE A URL DO VÍDEO NO SRC -->
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_AUDIO_AQUI"
+                        title="Áudio do trabalho"
+                        allowfullscreen>
+                    </iframe>
+
                 </div>
 
-                 <div class="card-citacao">
-                    <img src="filosofia3.jpg" alt="Retrato de Immanuel Kant">
-                    <blockquote>“Lugar de fala não é silenciamento, é localização".
-O intelectual engajado busca quebrar o silêncio secular imposto a negros, indígenas e mulheres, permitindo que eles sejam os sujeitos da sua própria história
-</blockquote>
-                    <span class="autor">- Djamila Ribeiro</span>
+                <h4>Áudio do trabalho</h4>
+
+                <p>
+                    Podcast, entrevista ou produção sonora.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     RACISMO
+========================================================== -->
+
+<section id="racismo" class="aba-conteudo">
+
+    <h2>Racismo</h2>
+
+    <p class="introducao">
+        Nesta seção estão reunidos os trabalhos desenvolvidos
+        sobre racismo, relações étnico-raciais e combate à
+        discriminação.
+    </p>
+
+
+    <div class="demonstracao">
+
+        <div class="demonstracao-imagem">
+
+            <img src="racismo1.jpg"
+                 alt="Demonstração do trabalho sobre racismo">
+
+        </div>
+
+
+        <div class="demonstracao-texto">
+
+            <span class="materia-tag">
+                Demonstração
+            </span>
+
+            <h3>Trabalho sobre Racismo</h3>
+
+            <p>
+                Escreva aqui a apresentação do trabalho, explicando
+                o tema estudado, a metodologia utilizada e os
+                resultados obtidos pelos estudantes.
+            </p>
+
+            <p>
+                Utilize este espaço para contextualizar a atividade
+                e apresentar as principais reflexões produzidas.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="midias">
+
+        <div class="midias-titulo">
+
+            <span class="materia-tag">Mídias</span>
+
+            <h3>Vídeos e áudios</h3>
+
+            <p>
+                Conteúdos audiovisuais relacionados ao trabalho.
+            </p>
+
+        </div>
+
+
+        <div class="midias-grid">
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+                        title="Vídeo sobre racismo"
+                        allowfullscreen>
+                    </iframe>
+
                 </div>
 
-                 <div class="card-citacao">
-                    <img src="filosofia4.jpg" alt="Retrato de Immanuel Kant">
-                    <blockquote>“Cada sociedade possui seu regime de verdade.”
-Foucault entendia que o intelectual não buscava uma verdade abstrata, mas  analisar como as instituições fabricam regimes de verdade e moldam os sujeitos.
-</blockquote>
-                    <span class="autor">- Foucault</span>
+                <h4>Vídeo</h4>
+
+                <p>
+                    Registro ou apresentação do trabalho.
+                </p>
+
+            </div>
+
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_AUDIO_AQUI"
+                        title="Áudio sobre racismo"
+                        allowfullscreen>
+                    </iframe>
+
                 </div>
 
-                 <div class="card-citacao">
-                    <img src="filosofia5.jpg" alt="Retrato de Immanuel Kant">
-                    <blockquote>“Sapere aude! Tenha coragem de fazer uso do teu próprio entendimento.” 
-Para Kant, Sair da menoridade exige que o intelectual atue como um provocador da autonomia, incentivando o uso público da razão contra a tutela do medo e da preguiça.
-</blockquote>
-                    <span class="autor">- Immanuel Kant</span>
+                <h4>Áudio</h4>
+
+                <p>
+                    Produção sonora dos estudantes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     DESIGUALDADE SOCIAL
+========================================================== -->
+
+<section id="desigualdade-social" class="aba-conteudo">
+
+    <h2>Desigualdade Social</h2>
+
+    <p class="introducao">
+        Trabalhos e produções relacionados às desigualdades
+        sociais e econômicas presentes na sociedade.
+    </p>
+
+
+    <div class="demonstracao">
+
+        <div class="demonstracao-imagem">
+
+            <img src="desigualdade-social1.jpg"
+                 alt="Demonstração do trabalho sobre desigualdade social">
+
+        </div>
+
+
+        <div class="demonstracao-texto">
+
+            <span class="materia-tag">
+                Demonstração
+            </span>
+
+            <h3>Trabalho sobre Desigualdade Social</h3>
+
+            <p>
+                Insira aqui o texto explicativo sobre o trabalho
+                desenvolvido pelos estudantes.
+            </p>
+
+            <p>
+                Apresente os principais dados, reflexões, pesquisas
+                e conclusões obtidas durante a atividade.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="midias">
+
+        <div class="midias-titulo">
+
+            <span class="materia-tag">Mídias</span>
+
+            <h3>Vídeos e áudios</h3>
+
+            <p>
+                Produções audiovisuais relacionadas ao tema.
+            </p>
+
+        </div>
+
+
+        <div class="midias-grid">
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+                        title="Vídeo sobre desigualdade social"
+                        allowfullscreen>
+                    </iframe>
+
                 </div>
 
-                <!-- Card de Sociologia --> 
+                <h4>Vídeo</h4>
 
-<div class="card-citacao">
-                    <img src="sociologia1.jpg" alt="Retrato de Immanuel Kant">
-                    <blockquote>"Nenhuma sociedade que esquece a arte de questionar pode esperar encontrar respostas para os problemas que a afligem."</blockquote>
-                    <span class="autor">- Zygmunt Bauman</span>
+                <p>
+                    Apresentação do trabalho.
+                </p>
+
+            </div>
+
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_AUDIO_AQUI"
+                        title="Áudio sobre desigualdade social"
+                        allowfullscreen>
+                    </iframe>
+
                 </div>
 
-                <!-- Card de Literatura -->
-            
-        <section id="mudancas-climaticas" class="aba-conteudo">
-            <h2>Mudanças Climáticas</h2>
-            <!-- Conteúdo... -->
-        </section>
+                <h4>Áudio</h4>
 
-        <section id="racismo" class="aba-conteudo">
-            <h2>Racismo</h2>
-            <!-- Conteúdo... -->
-        </section>
+                <p>
+                    Produção sonora.
+                </p>
 
-        <section id="desigualdade-social" class="aba-conteudo">
-            <h2>Desigualdade Social</h2>
-            <!-- Conteúdo... -->
-        </section>
+            </div>
 
-        <section id="decolonialidade" class="aba-conteudo">
-            <h2>Decolonialidade</h2>
-            <!-- Conteúdo... -->
-        </section>
+        </div>
 
-        <section id="feminicidio" class="aba-conteudo">
-            <h2>Feminicídio</h2>
-            <!-- Conteúdo... -->
-        </section>
-    </main>
+    </div>
 
-    <footer>
-        Projeto Integrador - Atividades desenvolvidas pelos estudantes do 2° Ano do Ensino Médio.</p>
-    </footer>
+</section>
 
-    <script>
-        function mostrarAba(idAba, elemento) {
-            // Esconde todas as seções
-            const secoes = document.querySelectorAll('.aba-conteudo');
-            secoes.forEach(secao => secao.classList.remove('ativa'));
 
-            // Desmarca todos os botões do menu
-            const botoes = document.querySelectorAll('.tab-btn');
-            botoes.forEach(btn => btn.classList.remove('ativo'));
 
-            // Mostra apenas a seção clicada
-            const secaoAlvo = document.getElementById(idAba);
-            if (secaoAlvo) {
-                secaoAlvo.classList.add('ativa');
-            }
+<!-- ==========================================================
+     DECOLONIALIDADE
+========================================================== -->
 
-            // Destaca o botão clicado
-            elemento.classList.add('ativo');
-        }
-    </script>
+<section id="decolonialidade" class="aba-conteudo">
+
+    <h2>Decolonialidade</h2>
+
+    <p class="introducao">
+        Aqui apresentamos produções relacionadas ao pensamento
+        decolonial, à cultura e às diferentes formas de compreender
+        a sociedade e a história.
+    </p>
+
+
+    <div class="demonstracao">
+
+        <div class="demonstracao-imagem">
+
+            <img src="decolonialidade1.jpg"
+                 alt="Demonstração do trabalho sobre decolonialidade">
+
+        </div>
+
+
+        <div class="demonstracao-texto">
+
+            <span class="materia-tag">
+                Demonstração
+            </span>
+
+            <h3>Trabalho sobre Decolonialidade</h3>
+
+            <p>
+                Insira aqui a explicação sobre o trabalho realizado,
+                apresentando o tema, os objetivos e as principais
+                discussões desenvolvidas.
+            </p>
+
+            <p>
+                Este espaço pode ser utilizado para registrar as
+                conclusões e aprendizados obtidos pelos estudantes.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="midias">
+
+        <div class="midias-titulo">
+
+            <span class="materia-tag">Mídias</span>
+
+            <h3>Vídeos e áudios</h3>
+
+            <p>
+                Confira as produções audiovisuais do projeto.
+            </p>
+
+        </div>
+
+
+        <div class="midias-grid">
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+                        title="Vídeo sobre decolonialidade"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <h4>Vídeo</h4>
+
+                <p>
+                    Registro da atividade.
+                </p>
+
+            </div>
+
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_AUDIO_AQUI"
+                        title="Áudio sobre decolonialidade"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <h4>Áudio</h4>
+
+                <p>
+                    Produção sonora.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================================
+     FEMINICÍDIO
+========================================================== -->
+
+<section id="feminicidio" class="aba-conteudo">
+
+    <h2>Feminicídio</h2>
+
+    <p class="introducao">
+        Trabalhos desenvolvidos para discutir violência contra
+        a mulher, feminicídio, direitos e enfrentamento à violência
+        de gênero.
+    </p>
+
+
+    <div class="demonstracao">
+
+        <div class="demonstracao-imagem">
+
+            <img src="feminicidio1.jpg"
+                 alt="Demonstração do trabalho sobre feminicídio">
+
+        </div>
+
+
+        <div class="demonstracao-texto">
+
+            <span class="materia-tag">
+                Demonstração
+            </span>
+
+            <h3>Trabalho sobre Feminicídio</h3>
+
+            <p>
+                Insira aqui a descrição do trabalho desenvolvido
+                pelos estudantes, apresentando os objetivos,
+                pesquisas e reflexões realizadas.
+            </p>
+
+            <p>
+                Utilize este espaço para explicar os resultados
+                encontrados e as conclusões do grupo.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="midias">
+
+        <div class="midias-titulo">
+
+            <span class="materia-tag">Mídias</span>
+
+            <h3>Vídeos e áudios</h3>
+
+            <p>
+                Produções relacionadas ao trabalho.
+            </p>
+
+        </div>
+
+
+        <div class="midias-grid">
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"
+                        title="Vídeo sobre feminicídio"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <h4>Vídeo</h4>
+
+                <p>
+                    Apresentação do trabalho.
+                </p>
+
+            </div>
+
+
+            <div class="midia-card">
+
+                <div class="youtube-placeholder">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/SEU_AUDIO_AQUI"
+                        title="Áudio sobre feminicídio"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+                <h4>Áudio</h4>
+
+                <p>
+                    Produção sonora.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    Projeto Integrador - Atividades desenvolvidas pelos estudantes
+    do 2° Ano do Ensino Médio.
+
+</footer>
+
+
+
+<script>
+
+function mostrarAba(idAba, elemento) {
+
+    const secoes = document.querySelectorAll('.aba-conteudo');
+
+    secoes.forEach(secao => {
+        secao.classList.remove('ativa');
+    });
+
+
+    const botoes = document.querySelectorAll('.tab-btn');
+
+    botoes.forEach(btn => {
+        btn.classList.remove('ativo');
+    });
+
+
+    const secaoAlvo = document.getElementById(idAba);
+
+    if (secaoAlvo) {
+        secaoAlvo.classList.add('ativa');
+    }
+
+
+    elemento.classList.add('ativo');
+
+
+    // Volta para o início da página ao trocar de aba
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+
+}
+
+</script>
+
+</body>
+</html>
